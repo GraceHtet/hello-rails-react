@@ -20,11 +20,4 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_17_095113) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "test_animals", id: :serial, force: :cascade do |t|
-    t.string "name", limit: 255, null: false
-    t.date "birth_date"
-    t.decimal "weight_kg"
-    t.string "species", limit: 50
-  end
-
 end
